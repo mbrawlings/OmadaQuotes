@@ -30,6 +30,7 @@
 		0E57D51D292483F10026EEDA /* QuoteDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDataController.swift; sourceTree = "<group>"; };
 		0E57D51F292484080026EEDA /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		0E57D521292486970026EEDA /* SlideshowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideshowViewController.swift; sourceTree = "<group>"; };
+		0E57D5512925A5FB0026EEDA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +47,7 @@
 		0E57D4F6292482B10026EEDA = {
 			isa = PBXGroup;
 			children = (
+				0E57D5512925A5FB0026EEDA /* README.md */,
 				0E57D501292482B10026EEDA /* OmadaQuotes */,
 				0E57D500292482B10026EEDA /* Products */,
 			);
