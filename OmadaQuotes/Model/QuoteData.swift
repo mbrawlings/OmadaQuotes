@@ -12,4 +12,5 @@ struct QuoteData: Codable {
     var quote: String
     var author: String
     var slideTransitionDelay: Int
+    var image: String
 }
