@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+// creating struct to match json format
+struct QuoteData: Codable {
+    var quote: String
+    var author: String
+    var slideTransitionDelay: Int
+}
