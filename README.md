@@ -8,7 +8,7 @@ Simple slideshow app created with Swift's Storyboard and UIKit
 
 This app was coded to show my ability to start out a new project, write features with 
 a basic spec and design, and write clean code. This application follows the MVC structure.
-I made sure to make the data scalable so if oen were to add more quotes to the JSON data, 
+I made sure to make the data scalable so if one were to add more quotes to the JSON data, 
 the app would still function properly.
 
 ## Breakdown
@@ -18,4 +18,4 @@ the app would still function properly.
 * Loop slideshow
 
 Each slide will have it's own author, quote, and a picture that I added. Each slide will
-also present itself for a specific amount of time in order to read the quote with enough time.
+also present itself for a specific amount of time in order to read the entire quote.
