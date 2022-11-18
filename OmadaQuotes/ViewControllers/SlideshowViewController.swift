@@ -17,13 +17,26 @@ class SlideshowViewController: UIViewController {
     @IBOutlet weak var authorLabel: UILabel!
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var quoteLabel: UILabel!
+    @IBOutlet weak var quoteView: UIView!
     
     //MARK: - LIFECYCLES
     override func viewDidLoad() {
+        setupViews()
         presentData()
     }
     
     //MARK: - HELPER METHODS
+    func setupViews() {
+        /// set quote border
+        quoteView.layer.borderColor = UIColor.white.cgColor
+        quoteView.layer.borderWidth = 1
+        /// set author bottom border
+        var bottomLine = CALayer()
+        bottomLine.frame = CGRect(x: 0.0, y: authorLabel.frame.height + 1, width: authorLabel.frame.width, height: 2.5)
+        bottomLine.backgroundColor = UIColor.white.cgColor
+        authorLabel.layer.addSublayer(bottomLine)
+    }
+    
     func presentData() {
         /// set views to the right of screen width
         view.center.x += view.bounds.width
