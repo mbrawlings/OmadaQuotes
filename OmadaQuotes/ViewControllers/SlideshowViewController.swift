@@ -31,7 +31,7 @@ class SlideshowViewController: UIViewController {
         quoteView.layer.borderColor = UIColor.white.cgColor
         quoteView.layer.borderWidth = 1
         /// set author bottom border
-        var bottomLine = CALayer()
+        let bottomLine = CALayer()
         bottomLine.frame = CGRect(x: 0.0, y: authorLabel.frame.height + 1, width: authorLabel.frame.width, height: 2.5)
         bottomLine.backgroundColor = UIColor.white.cgColor
         authorLabel.layer.addSublayer(bottomLine)
