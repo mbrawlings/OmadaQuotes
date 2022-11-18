@@ -9,26 +9,27 @@ import Foundation
 
 class QuoteDataController {
     
-    // singleton
+    /// singleton
     static let shared = QuoteDataController()
     
-    // static data
+    /// static data
     var quoteData: [QuoteData] = []
     
-    // call load func upon initialization
+    /// call load func upon initialization
     init() {
         loadData()
     }
     
-    // get and decode json data to usable data
+    /// function that parses JSON into above array
     func loadData() {
         if let fileLocation = Bundle.main.url(forResource: "data", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: fileLocation)
                 let decodedData = try JSONDecoder().decode([QuoteData].self, from: data)
                 quoteData = decodedData
+                print("[QuoteDataController] loadData: quoteData loaded successfully with \(quoteData.count) items")
             } catch {
-                print(error)
+                print("[QuoteDataController] loadData: quoteData was unable to be loaded because: \(error.localizedDescription)")
             }
         }
     }

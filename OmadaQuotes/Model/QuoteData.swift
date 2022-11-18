@@ -7,7 +7,7 @@
 
 import Foundation
 
-// creating struct to match json format
+/// creating struct to match json format
 struct QuoteData: Codable {
     var quote: String
     var author: String
